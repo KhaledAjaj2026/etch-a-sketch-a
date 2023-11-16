@@ -1,3 +1,75 @@
-.description {
-    color: red;
+.canvas-grid {
+    width: 60vw;
+    height: 60vw;
+    background-color: rgb(227, 227, 227);
+    margin: 20px auto;
+}
+
+/* 8 X 8 */
+.grid_8-8 {
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+}
+
+.item_8-8 {
+    width: 7.5vw;
+    height: 7.5vw;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+/* 16 X 16 */
+.grid_16-16 {
+    display: grid;
+    grid-template: repeat(16, 1fr) / repeat(16, 1fr);
+}
+
+.item_16-16 {
+    width: 3.75vw;
+    height: 3.75vw;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+/* 32 X 32 */
+.grid_32-32 {
+    display: grid;
+    grid-template: repeat(32, 1fr) / repeat(32, 1fr);
+}
+
+.item_32-32 {
+    width: 1.875vw;
+    height: 1.875vw;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+/* 64 X 64 */
+.grid_64-64 {
+    display: grid;
+    grid-template: repeat(64, 1fr) / repeat(64, 1fr);
+}
+
+.item_64-64 {
+    width: 0.9375vw;
+    height: 0.9375vw;
+    border: 0.5px solid black;
+    background-color: beige;
+}
+
+/* 128 X 128 */
+.grid_128-128 {
+    display: grid;
+    grid-template: repeat(128, 1fr) / repeat(128, 1fr);
+}
+
+.item_128-128 {
+    width: 0.46875vw;
+    height: 0.46875vw;
+    border: 0.5px solid black;
+    background-color: beige;
+}
+
+.hidden {
+    display: none;
 }
