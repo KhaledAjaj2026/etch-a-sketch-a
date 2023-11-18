@@ -5,13 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap" rel="stylesheet">
+    <script src="populate-grids.js" defer></script>
     <script src="script.js" defer></script>
     <title>Etch-a-Sketch-a - Your Childhood now on the Internet!</title>
 </head>
 
 <body>
-    <h1>Etch-a-Sketch-a</h1>
-    <p class="description">Your childhood, now on the Internet!</p>
+    <header>
+        <h1>Etch-a-Sketch-a</h1>
+    </header>
+    <main>
+        <div class="pen-options">
+            <button type="button" class="pen-black">Black</button>
+            <button type="button" class="pen-shade">Shade</button>
+            <button type="button" class="pen-lighten">Lighten</button>
+            <button type="button" class="pen-rgb">RGB</button>
+            <button type="button" class="pen-palette">Palette</button>
+            <button type="button" class="pen-erase">Erase</button>
+        </div>
+        <div class="canvas-grid">
+            <div class="canvas-size grid_8-8"></div>
+            <div class="canvas-size grid_16-16 hidden"></div>
+            <div class="canvas-size grid_32-32 hidden"></div>
+            <div class="canvas-size grid_64-64 hidden"></div>
+        </div>
+        <div class="canvas-options">
+            <div class="grid-sizes">
+                <button type="button" class="grid-size-option grid-option_8-8"
+                    onclick="showGrid('grid_8-8')">8x8</button>
+                <button type="button" class="grid-size-option grid-option_16-16"
+                    onclick="showGrid('grid_16-16')">16x16</button>
+                <button type="button" class="grid-size-option grid-option_32-32"
+                    onclick="showGrid('grid_32-32')">32x32</button>
+                <button type="button" class="grid-size-option grid-option_64-64"
+                    onclick="showGrid('grid_64-64')">64x64</button>
+            </div>
+            <div class="misc-options">
+                <button type="button" class="clear" onclick="clearBoard()">Clear</button>
+                <button type="button" class="import">Import</button>
+                <button type="button" class="export">Export</button>
+            </div>
+        </div>
+    </main>
+    <footer>Copyright © Khaled Ajaj 2023</footer>
 </body>
 
 </html>
