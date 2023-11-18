@@ -6,3 +6,18 @@ const showGrid = (gridToShow) => {
 	});
 	document.getElementsByClassName(gridToShow)[0].classList.remove('hidden');
 };
+
+const clearBoard = () => {
+	document.querySelectorAll('.item_8-8').forEach((element) => {
+		element.setAttribute('style', 'background-color: beige;');
+	});
+	document.querySelectorAll('.item_16-16').forEach((element) => {
+		element.setAttribute('style', 'background-color: beige;');
+	});
+	document.querySelectorAll('.item_32-32').forEach((element) => {
+		element.setAttribute('style', 'background-color: beige;');
+	});
+	document.querySelectorAll('.item_64-64').forEach((element) => {
+		element.setAttribute('style', 'background-color: beige;');
+	});
+};
