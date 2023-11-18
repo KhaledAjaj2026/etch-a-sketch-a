@@ -27,18 +27,20 @@
         <div class="canvas-container">
             <div class="canvas-grid">
                 <div class="canvas-size grid_8-8"></div>
-                <div class="canvas-size grid_16-16"></div>
-                <div class="canvas-size grid_32-32"></div>
-                <div class="canvas-size grid_64-64"></div>
-                <div class="canvas-size grid_128-128"></div>
+                <div class="canvas-size grid_16-16 hidden"></div>
+                <div class="canvas-size grid_32-32 hidden"></div>
+                <div class="canvas-size grid_64-64 hidden"></div>
             </div>
             <div class="canvas-options">
                 <div class="grid-sizes">
-                    <button type="button" class="grid-size-option grid-option_8-8">8x8</button>
-                    <button type="button" class="grid-size-option grid-option_16-16">16x16</button>
-                    <button type="button" class="grid-size-option grid-option_32-32">32x32</button>
-                    <button type="button" class="grid-size-option grid-option_64-64">64x64</button>
-                    <button type="button" class="grid-size-option grid-option_128-128">128x128</button>
+                    <button type="button" class="grid-size-option grid-option_8-8"
+                        onclick="showGrid('grid_8-8')">8x8</button>
+                    <button type="button" class="grid-size-option grid-option_16-16"
+                        onclick="showGrid('grid_16-16')">16x16</button>
+                    <button type="button" class="grid-size-option grid-option_32-32"
+                        onclick="showGrid('grid_32-32')">32x32</button>
+                    <button type="button" class="grid-size-option grid-option_64-64"
+                        onclick="showGrid('grid_64-64')">64x64</button>
                 </div>
                 <div class="misc-options">
                     <button type="button" class="clear">Clear</button>
